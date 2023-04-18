@@ -1,0 +1,89 @@
+.styled-table {
+  border-collapse: collapse;
+  margin: auto;
+  margin-top: 30px;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  max-width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+  background-color: #55bee4;
+  color: black;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #dddddddd;
+}
+
+.btn {
+  border: none;
+  color: black;
+  padding: 5px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background-color: #55bee4;
+  width: 65px;
+  text-decoration: none;
+  color: black;
+}
+
+.btn-delete {
+  background-color: grey;
+}
+.inputfield {
+  width: 20% !important;
+  margin-top: 2%;
+  margin-left: 20%;
+}
+
+/* For screens between 576px and 768px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .styled-table {
+    font-size: 0.9em;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 4px 7px;
+  }
+}
+
+/* For screens between 768px and 992px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .styled-table {
+    font-size: 1em;
+  }
+}
+
+/* For screens smaller than 576px */
+@media (max-width: 575.98px) {
+  .body {
+    font-size: 0.8em;
+  }
+  .styled-table th,
+  .styled-table td {
+    padding: 10px;
+  }
+  .btn {
+    font-size: 14px;
+    padding: 3px 6px;
+  }
+}
+
+@media (max-width: 400px) {
+  .inputfield {
+    width: 80%;
+  }
+}
