@@ -78,6 +78,7 @@ function Home() {
           <Col sm className="col1">
             Contact our technical and medical team for support, consultancy or
             to log a complaint
+            <br />
             <Link to="/Help" style={{ textDecorationLine: "none" }}>
               <Button className="contact">Contact Us</Button>
             </Link>
