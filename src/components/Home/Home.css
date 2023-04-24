@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  width: 100%;
+}
+
+h2 {
+  text-align: left;
+  margin-top: 50px;
+  color: white;
+}
+
+h3 {
+  text-align: center;
+  margin: 10px;
+}
+
+#appointment {
+  width: 150px;
+  background-color: grey;
+  padding: 12px;
+}
+
+#learnmore {
+  width: 150px;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 10px;
+}
+.col1 {
+  background-color: transparent;
+  padding: 60px;
+  margin: 25px;
+  border: 2px solid whitesmoke;
+  height: 300px;
+  text-align: center;
+  box-shadow: 3px 3px 4px grey;
+  border-radius: 10px;
+}
+.col2 {
+  background-color: transparent;
+  padding: 10px;
+  margin: 35px;
+  border: 2px solid whitesmoke;
+  height: 300px;
+  text-align: center;
+  box-shadow: 2px 2px 3px grey;
+  border-radius: 10px;
+}
+
+.book {
+  width: 150px;
+  background-color: #55bee4;
+  border: 2px solid white;
+  padding: 10px;
+  margin-top: 25px;
+}
+
+.contact {
+  width: 150px;
+  background-color: #55bee4;
+  border: 2px solid white;
+  padding: 10px;
+  margin-top: 10px;
+}
+@media screen and (max-width: 400px) {
+  .mt-2 {
+    font-size: small;
+  }
+  h2 {
+    margin-top: 10px;
+    font-size: medium;
+  }
+  .col1 {
+    margin-top: 1px;
+    width: fit-content;
+  }
+  .col2 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}

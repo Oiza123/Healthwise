@@ -2,9 +2,8 @@ import React from "react";
 import emailjs from "emailjs-com";
 import { toast } from "react-toastify";
 import Footer from "../Footer/Footer";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useRef } from "react";
-import { Container } from "react-bootstrap";
 import bg3 from "../images/bg 3.jpg";
 import "./Help.css";
 
@@ -37,7 +36,7 @@ function Help() {
       className="bg"
       style={{
         backgroundImage: `url('${bg3}')`,
-        height: "90vh",
+        height: "80vh",
         backgroundRepeat: "no-repeat",
         backgroundSize: "100%",
         borderRadius: "5px",
@@ -45,7 +44,7 @@ function Help() {
       }}
     >
       <div className="style">
-        <h4 style={{ margin: "15px" }}>Submit Complaint</h4>
+        <h4>Submit Complaint</h4>
         <form ref={form} onSubmit={sendEmail}>
           <label htmlFor="fname" />
           Name
@@ -57,14 +56,15 @@ function Help() {
         <label htmlFor="text" />
         Message
         <input
+          className="textarea"
           required
           type="textarea"
           id="msg"
           name="msg"
-          style={{ width: "250px", height: "150px" }}
         />
         <input type="submit" onClick={sendEmail} />
       </div>
+      <br />
       <hr />
       <Footer />
     </div>

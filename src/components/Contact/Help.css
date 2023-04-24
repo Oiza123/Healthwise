@@ -8,17 +8,26 @@
   padding-top: 1%;
   box-shadow: 3px 3px 5px rgb(58, 57, 57);
 }
-/* For screens smaller than 576px */
-@media (max-width: 400px) {
+
+h4 {
+  margin: 15px;
+}
+
+.textarea {
+  width: 250px;
+  height: 150px;
+}
+
+@media (max-width: 800px) {
   .style {
     width: 90%;
     margin-left: 5%;
   }
 }
 
-/* For screens smaller than 576px */
-@media (max-width: 400px) {
+@media (max-width: 800px) {
   .bg {
-    height: 10%;
+    background-image: none;
+    height: 100vh;
   }
 }

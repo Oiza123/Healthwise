@@ -11,14 +11,14 @@ import bg3 from "../images/bg 3.jpg";
 import dentistry from "../images/dentistry.png";
 import eyecare from "../images/eye care.png";
 import consultancy from "../images/consultancy.png";
-import obstetrics from "../images/obstetrics.png";
 import { Button } from "react-bootstrap";
 import Footer from "../Footer/Footer";
 import { HashLink } from "react-router-hash-link";
+import "./Home.css";
 
 function Home() {
   return (
-    <Container>
+    <Container className="container-fluid">
       <Row>
         <Col
           style={{
@@ -30,41 +30,19 @@ function Home() {
             marginTop: "15spx",
           }}
         >
-          <h2
-            style={{
-              textAlign: "left",
-              marginTop: "50px",
-              color: "white",
-            }}
-          >
+          <h2>
             WELCOME TO HEALTH-WISE
             <p className="mt-2">
               Bringing the best medical solutions <br />
               solutions to your fingertips
               <br />
               <Link to="/add" style={{ textDecorationLine: "none" }}>
-                <Button
-                  className="mt-4"
-                  style={{
-                    width: "150px",
-                    backgroundColor: "grey",
-                    padding: "12px",
-                  }}
-                >
+                <Button className="mt-4" id="appointment">
                   Appointment
                 </Button>
               </Link>
               <HashLink to="#learn" style={{ textDecorationLine: "none" }}>
-                <Button
-                  className="mt-4"
-                  style={{
-                    width: "150px",
-                    backgroundColor: "transparent",
-                    border: "2px solid white",
-                    padding: "10px",
-                    textDecorationStyle: "none",
-                  }}
-                >
+                <Button className="mt-4" id="learnmore">
                   Learn More
                 </Button>
               </HashLink>
@@ -83,91 +61,25 @@ function Home() {
         }}
       >
         <Row>
-          <Col
-            sm
-            style={{
-              backgroundColor: "transparent",
-              padding: "60px",
-              margin: "25px",
-              border: "2px solid whitesmoke",
-              height: "300px",
-              textAlign: "center",
-              boxShadow: "2px 2px 3px grey",
-              borderRadius: "10px",
-            }}
-          >
+          <Col sm className="col1" id="col">
             Register and book appointments at a go
+            <br />
             <Link to="/add" style={{ textDecorationLine: "none" }}>
-              <Button
-                className="mt-4"
-                style={{
-                  width: "150px",
-                  backgroundColor: "#55bee4",
-                  border: "2px solid white",
-                  padding: "10px",
-                }}
-              >
-                Book Appointment
-              </Button>
+              <Button className="book">Book Appointment</Button>
             </Link>
           </Col>
-          <Col
-            sm
-            style={{
-              backgroundColor: "transparent",
-              padding: "60px",
-              margin: "25px",
-              border: "2px solid whitesmoke",
-              height: "300px",
-              textAlign: "center",
-              boxShadow: "2px 2px 3px grey",
-              borderRadius: "10px",
-            }}
-          >
+          <Col sm className="col1">
             Keep up-to-date record of appointments and patient information.
+            <br />
             <Link to="/Info" style={{ textDecorationLine: "none" }}>
-              <Button
-                className="mt-4"
-                style={{
-                  width: "150px",
-                  backgroundColor: "#55bee4",
-                  border: "2px solid white",
-                  padding: "10px",
-                  textDecorationStyle: "none",
-                }}
-              >
-                View Record
-              </Button>
+              <Button className="book">View Record</Button>
             </Link>
           </Col>
-          <Col
-            sm
-            style={{
-              backgroundColor: "transparent",
-              padding: "60px",
-              margin: "25px",
-              border: "2px solid whitesmoke",
-              height: "300px",
-              textAlign: "center",
-              boxShadow: "2px 2px 3px grey",
-              borderRadius: "10px",
-            }}
-          >
+          <Col sm className="col1">
             Contact our technical and medical team for support, consultancy or
             to log a complaint
             <Link to="/Help" style={{ textDecorationLine: "none" }}>
-              <Button
-                className="mt-4"
-                style={{
-                  width: "150px",
-                  backgroundColor: "#55bee4",
-                  border: "2px solid white",
-                  padding: "10px",
-                  textDecorationStyle: "none",
-                }}
-              >
-                Contact Us
-              </Button>
+              <Button className="contact">Contact Us</Button>
             </Link>
           </Col>
         </Row>
@@ -198,22 +110,8 @@ function Home() {
             marginTop: "15px",
           }}
         >
-          <h2 style={{ textAlign: "center", margin: "10px" }}>
-            Types of Appointments
-          </h2>
-          <Col
-            sm={2}
-            style={{
-              backgroundColor: "transparent",
-              padding: "10px",
-              margin: "35px",
-              border: "2px solid whitesmoke",
-              height: "300px",
-              textAlign: "center",
-              boxShadow: "2px 2px 3px grey",
-              borderRadius: "10px",
-            }}
-          >
+          <h3>Types of Appointments</h3>
+          <Col sm className="col2">
             <img
               src={eyecare}
               alt=""
@@ -225,19 +123,7 @@ function Home() {
               care and contact fitting.
             </p>
           </Col>
-          <Col
-            sm={2}
-            style={{
-              backgroundColor: "transparent",
-              padding: "10px",
-              margin: "35px",
-              border: "2px solid whitesmoke",
-              height: "300px",
-              textAlign: "center",
-              boxShadow: "2px 2px 3px grey",
-              borderRadius: "10px",
-            }}
-          >
+          <Col sm className="col2">
             <img
               src={consultancy}
               alt=""
@@ -249,43 +135,8 @@ function Home() {
               psychological cases.
             </p>
           </Col>
-          <Col
-            sm={2}
-            style={{
-              backgroundColor: "transparent",
-              padding: "10px",
-              margin: "35px",
-              border: "2px solid whitesmoke",
-              height: "300px",
-              textAlign: "center",
-              boxShadow: "2px 2px 3px grey",
-              borderRadius: "10px",
-            }}
-          >
-            <img
-              src={obstetrics}
-              alt=""
-              style={{ width: "50%", paddingBottom: "10%" }}
-            />
-            <h5>Obstetrics</h5>
-            <p>
-              Book an obstetrician for antenatal care, labour and delivery,
-              postnatal care and female health issues.
-            </p>
-          </Col>
-          <Col
-            sm={2}
-            style={{
-              backgroundColor: "transparent",
-              padding: "10px",
-              margin: "35px",
-              border: "2px solid whitesmoke",
-              height: "300px",
-              textAlign: "center",
-              boxShadow: "2px 2px 3px grey",
-              borderRadius: "10px",
-            }}
-          >
+
+          <Col sm className="col2">
             <img
               src={dentistry}
               alt=""

@@ -1,5 +1,4 @@
 import React from "react";
-import { FaBrain } from "react-icons/fa";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import { Outlet, Link } from "react-router-dom";

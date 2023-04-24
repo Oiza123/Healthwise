@@ -13,7 +13,7 @@ import "./AddEdit.css";
 import { Container } from "react-bootstrap";
 import { HashLink } from "react-router-hash-link";
 
-//create the registration form with data being save to firebase
+//create the registration form with data being saved to firebase
 
 const initialState = {
   name: "",
@@ -117,7 +117,7 @@ function AddEdit() {
         backgroundSize: "100%",
         borderRadius: "5px",
         paddingTop: "50px",
-        height: "100%",
+        height: "100vh",
       }}
     >
       <Row>
@@ -196,17 +196,7 @@ function AddEdit() {
             </strong>
             <br />
             <HashLink to="/#learn" style={{ textDecorationLine: "none" }}>
-              <Button
-                className="mt-4"
-                style={{
-                  width: "150px",
-                  backgroundColor: "transparent",
-                  border: "2px solid white",
-                  padding: "10px",
-                }}
-              >
-                Learn More
-              </Button>
+              <Button className="learn">Learn More</Button>
             </HashLink>
           </div>
         </Col>

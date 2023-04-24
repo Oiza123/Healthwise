@@ -10,7 +10,7 @@ function Search() {
   };
 
   let query = useQuery;
-  let search = query("name");
+  let search = `query.get("name")`;
 
   useEffect(() => {
     searchData();

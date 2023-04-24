@@ -62,7 +62,7 @@ function Info() {
       </form>
       <div style={{ overflowX: "hidden" }}>
         <div className="table-responsive-sm">
-          <table className="styled-table" style={{ overflowX: "hidden" }}>
+          <table className="styled-table">
             <thead clasName="styled-table thead tr">
               <tr className="styled-table th styled-table td styled-table th">
                 <th style={{ textAlign: "center" }}>No.</th>
