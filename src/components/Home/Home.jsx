@@ -6,8 +6,6 @@ import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import bg1 from "../images/bg 1.jpg";
-import bg3 from "../images/bg 3.jpg";
 import dentistry from "../images/dentistry.png";
 import eyecare from "../images/eye care.png";
 import consultancy from "../images/consultancy.png";
@@ -20,16 +18,7 @@ function Home() {
   return (
     <Container className="container-fluid">
       <Row>
-        <Col
-          style={{
-            backgroundImage: `url('${bg1}')`,
-            height: "500px",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "100%",
-            borderRadius: "5px",
-            marginTop: "15spx",
-          }}
-        >
+        <Col className="bg">
           <h2>
             WELCOME TO HEALTH-WISE
             <p className="mt-2">
@@ -100,17 +89,7 @@ function Home() {
           },
         }}
       >
-        <Row
-          id="learn"
-          style={{
-            backgroundImage: `url('${bg3}')`,
-            height: "100%",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "100%",
-            borderRadius: "5px",
-            marginTop: "15px",
-          }}
-        >
+        <Row id="learn" className="bg3">
           <h3>Types of Appointments</h3>
           <Col sm className="col2">
             <img
@@ -128,7 +107,7 @@ function Home() {
             <img
               src={consultancy}
               alt=""
-              style={{ width: "50%", paddingBottom: "10%" }}
+              style={{ width: "40%", paddingBottom: "10%" }}
             />
             <h5>Consultancy</h5>
             <p>

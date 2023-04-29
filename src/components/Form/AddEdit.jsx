@@ -7,8 +7,6 @@ import { toast } from "react-toastify";
 import Button from "react-bootstrap/Button";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import bg3 from "../images/bg 3.jpg";
-import { Link } from "react-router-dom";
 import "./AddEdit.css";
 import { Container } from "react-bootstrap";
 import { HashLink } from "react-router-hash-link";
@@ -110,16 +108,7 @@ function AddEdit() {
   //creating the form
 
   return (
-    <Container
-      style={{
-        backgroundImage: `url('${bg3}')`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "100%",
-        borderRadius: "5px",
-        paddingTop: "50px",
-        height: "100vh",
-      }}
-    >
+    <Container className="bg1">
       <Row>
         <Col sm>
           <div className="formStyle">

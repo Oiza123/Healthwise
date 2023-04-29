@@ -1,11 +1,15 @@
-import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon, MDBBtn } from "mdb-react-ui-kit";
+import {
+  MDBFooter,
+  MDBContainer,
+  MDBRow,
+  MDBCol,
+  MDBIcon,
+  MDBBtn,
+} from "mdb-react-ui-kit";
 
 function Footer() {
   return (
-    <MDBFooter
-      bgColor="light"
-      className="text-center text-lg-start text-muted"
-    >
+    <MDBFooter bgColor="light" className="text-center text-lg-start text-muted">
       <section>
         <MDBContainer className="text-center text-md-start mt-5">
           <MDBRow className="mt-3">
@@ -49,7 +53,7 @@ function Footer() {
             <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
               <p>
-                <MDBIcon color="secondary" icon="home" className="me-2" />
+                <MDBIcon color="secondary" icon="home" className="me-3" />
                 Jos, Nigeria.
               </p>
               <p>
@@ -67,9 +71,11 @@ function Footer() {
 
       <div
         className="text-center p-4"
-        style={{ backgroundColor: "rgba(0, 0, 0, 0.05)"}}
+        style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
       >
         © 2023 Healthwise
+        <br />
+        Designed by Oiza
       </div>
     </MDBFooter>
   );

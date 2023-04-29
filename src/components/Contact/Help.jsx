@@ -4,7 +4,6 @@ import { toast } from "react-toastify";
 import Footer from "../Footer/Footer";
 import { useNavigate } from "react-router-dom";
 import { useRef } from "react";
-import bg3 from "../images/bg 3.jpg";
 import "./Help.css";
 
 function Help() {
@@ -32,17 +31,7 @@ function Help() {
   };
 
   return (
-    <div
-      className="bg"
-      style={{
-        backgroundImage: `url('${bg3}')`,
-        height: "80vh",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "100%",
-        borderRadius: "5px",
-        paddingTop: "10px",
-      }}
-    >
+    <div className="bg2">
       <div className="style">
         <h4>Submit Complaint</h4>
         <form ref={form} onSubmit={sendEmail}>
