@@ -8,6 +8,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import dentistry from "../images/dentistry.png";
 import eyecare from "../images/eye care.png";
+import doctor1 from "../images/doctor 1.png";
+import doctor2 from "../images/doctor 2.png";
+import doctor3 from "../images/doctor 3.png";
 import consultancy from "../images/consultancy.png";
 import { Button } from "react-bootstrap";
 import Footer from "../Footer/Footer";
@@ -17,6 +20,7 @@ import "./Home.css";
 function Home() {
   return (
     <Container className="container-fluid">
+      {/*first row*/}
       <Row>
         <Col className="bg">
           <h2>
@@ -39,6 +43,7 @@ function Home() {
           </h2>
         </Col>
       </Row>
+      {/*second row*/}
       <motion.div
         className="box"
         initial={{ opacity: 0, scale: 0.5 }}
@@ -74,6 +79,7 @@ function Home() {
           </Col>
         </Row>
       </motion.div>
+      {/*third row*/}
       <motion.div
         className="box"
         initial={{ opacity: 0, scale: 0.5 }}
@@ -127,6 +133,48 @@ function Home() {
               Book a dentist for teeth whitening, remolding, gum filling and
               general teeth care.
             </p>
+          </Col>
+        </Row>
+      </motion.div>
+      {/*fourth row*/}
+      <motion.div
+        className="box"
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{
+          duration: 3.0,
+          delay: 1,
+          ease: [0, 0.71, 0.2, 1.01],
+        }}
+      >
+        <Row>
+          <h3>Meet our Medical Team</h3>
+          <Col sm className="col3">
+            <img src={doctor1} alt="" style={{ width: "100%" }} />
+            <br />
+            <strong>Dr.Chris : Chief Consultant</strong>
+            <br />
+            <Link to="/add" style={{ textDecorationLine: "none" }}>
+              <Button className="book">Book Appointment</Button>
+            </Link>
+          </Col>
+          <Col sm className="col3">
+            <img src={doctor2} alt="" style={{ width: "100%" }} />
+            <br />
+            <strong>Dr.Anne : Ophthamologist</strong>
+            <br />
+            <Link to="/add" style={{ textDecorationLine: "none" }}>
+              <Button className="book">Book Appointment</Button>
+            </Link>
+          </Col>
+          <Col sm className="col3">
+            <img src={doctor3} alt="" style={{ width: "100%" }} />
+            <br />
+            <strong>Dr. Seth : Dentist </strong>
+            <br />
+            <Link to="/add" style={{ textDecorationLine: "none" }}>
+              <Button className="book">Book Appointment</Button>
+            </Link>
           </Col>
         </Row>
       </motion.div>

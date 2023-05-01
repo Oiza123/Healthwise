@@ -5,7 +5,7 @@
   font-size: 0.9em;
   font-family: sans-serif;
   max-width: 100%;
-  overflow: hidden;
+  table-layout: auto;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 

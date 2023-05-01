@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import React, { useEffect, useState } from "react";
+import { Table } from "react-bootstrap";
 import fireDb from "../Firebase/firebase";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -60,9 +61,10 @@ function Info() {
           value={search}
         />
       </form>
-      <div style={{ overflowX: "hidden" }}>
-        <div className="table-responsive-sm">
-          <table className="styled-table">
+      {/*creating the table */}
+      <div className="overflow-x auto !important">
+        <div className="table-responsive">
+          <Table striped bordered hover className="styled-table">
             <thead clasName="styled-table thead tr">
               <tr className="styled-table th styled-table td styled-table th">
                 <th style={{ textAlign: "center" }}>No.</th>
@@ -106,7 +108,7 @@ function Info() {
                 })
               }
             </tbody>
-          </table>
+          </Table>
           <hr />
           <Footer />
         </div>
