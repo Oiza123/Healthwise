@@ -4,7 +4,6 @@ import {
   MDBRow,
   MDBCol,
   MDBIcon,
-  MDBBtn,
 } from "mdb-react-ui-kit";
 
 function Footer() {
@@ -62,7 +61,7 @@ function Footer() {
               </p>
               <p>
                 <MDBIcon color="secondary" icon="phone" className="me-3" /> +
-                234 11 22 33 44 55
+                +234 1122 334 455
               </p>
             </MDBCol>
           </MDBRow>
@@ -73,9 +72,9 @@ function Footer() {
         className="text-center p-4"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
       >
-        © 2023 Healthwise
+        © 2024 Healthwise
         <br />
-        Designed by Oiza
+        Designed by Joy Onimisi
       </div>
     </MDBFooter>
   );
