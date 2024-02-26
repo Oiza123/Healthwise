@@ -31,7 +31,7 @@ function Home() {
               <br />
               <Link to="/add" style={{ textDecorationLine: "none" }}>
                 <Button className="mt-4" id="appointment">
-                  Appointment
+                  Book Appointment
                 </Button>
               </Link>
               <HashLink to="#learn" style={{ textDecorationLine: "none" }}>

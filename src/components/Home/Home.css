@@ -41,14 +41,14 @@ strong {
 #appointment {
   width: 150px;
   background-color: grey;
-  padding: 12px;
+  padding: 6px;
 }
 
 #learnmore {
   width: 150px;
   background-color: transparent;
   border: 2px solid white;
-  padding: 10px;
+  padding: 14px;
 }
 .col1 {
   background-color: transparent;
