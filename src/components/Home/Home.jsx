@@ -161,7 +161,7 @@ function Home() {
           <Col sm className="col3">
             <img src={doctor2} alt="" style={{ width: "100%" }} />
             <br />
-            <strong>Dr.Anne : Ophthamologist</strong>
+            <strong>Dr.Anne : Midwife</strong>
             <br />
             <Link to="/add" style={{ textDecorationLine: "none" }}>
               <Button className="book">Book Appointment</Button>
@@ -170,7 +170,7 @@ function Home() {
           <Col sm className="col3">
             <img src={doctor3} alt="" style={{ width: "100%" }} />
             <br />
-            <strong>Dr. Seth : Dentist </strong>
+            <strong>Dr. Seth : OB/GYN </strong>
             <br />
             <Link to="/add" style={{ textDecorationLine: "none" }}>
               <Button className="book">Book Appointment</Button>
