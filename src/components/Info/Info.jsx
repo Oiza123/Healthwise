@@ -71,7 +71,7 @@ function Info() {
                 <th style={{ textAlign: "center" }}>Name</th>
                 <th style={{ textAlign: "center" }}>CARD ID</th>
                 <th style={{ textAlign: "center" }}>Type of Appointment</th>
-                <th style={{ textAlign: "center" }}>Doctor </th>
+                <th style={{ textAlign: "center" }}>SPECIALIST </th>
                 <th style={{ textAlign: "center" }}>Next Appointment</th>
                 <th style={{ textAlign: "center" }}>Action</th>
               </tr>
