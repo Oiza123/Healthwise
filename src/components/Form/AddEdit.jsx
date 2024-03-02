@@ -134,7 +134,7 @@ function AddEdit() {
               />
               <br />
               <label htmlFor="doctor">
-                Doctor
+                Specialist
                 <input
                   required
                   type="text"
