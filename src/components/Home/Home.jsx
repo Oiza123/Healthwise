@@ -150,7 +150,6 @@ function Home() {
         <Row>
           <h3>Meet our Medical Team</h3>
           <Col sm className="col3">
-            <img src={doctor1} alt="" style={{ width: "100%" }} />
             <br />
             <strong>Dr.Chris : Chief Consultant</strong>
             <br />
@@ -159,7 +158,6 @@ function Home() {
             </Link>
           </Col>
           <Col sm className="col3">
-            <img src={doctor2} alt="" style={{ width: "100%" }} />
             <br />
             <strong>Nrs.Anne : Midwife</strong>
             <br />
@@ -168,7 +166,6 @@ function Home() {
             </Link>
           </Col>
           <Col sm className="col3">
-            <img src={doctor3} alt="" style={{ width: "100%" }} />
             <br />
             <strong>Dr. Seth : OB/GYN </strong>
             <br />
